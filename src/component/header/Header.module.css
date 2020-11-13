@@ -1,0 +1,17 @@
+.header {
+  height: 80px;
+  width: auto;
+  background-color: #cacaca;
+  border-bottom: 3px solid #474a4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mypageIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  background-color: aliceblue;
+  margin: 20px;
+}

@@ -1,0 +1,134 @@
+.cardField {
+  width: 184px;
+  margin: 10px;
+}
+.contentsCardLink {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contentsLink {
+  position: relative;
+  z-index: 0;
+  width: 184px;
+  height: 184px;
+}
+
+.contentsLink a {
+  text-decoration: none;
+}
+
+.cardBody {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  padding: 4px 4px 0px;
+  z-index: 1;
+}
+
+.cardBody div {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.thumbnail {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: opacity 0.2s ease 0s;
+}
+
+.favoritebotton {
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+  margin: -12px;
+  list-style: none;
+}
+
+.contentsTitle {
+  display: flex;
+  margin-top: 4px;
+}
+
+.contensTitle a {
+  display: inline;
+  max-width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.88);
+  transition: color 0.2s ease 0s;
+  margin-left:10px;
+}
+
+.authorInformation {
+  display: flex;
+  margin-top: 4px;
+}
+
+.authorImage {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  min-width: 0px;
+}
+
+.authorImage div {
+  margin-right: 4px;
+}
+
+.authorImage div a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.accountImge {
+  display: block;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.accountImage img {
+  border-style: none;
+  width: 24px;
+  height: 24px;
+}
+
+.authorName {
+  display: block;
+  min-width: 0px;
+  line-height: 22px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.64);
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
