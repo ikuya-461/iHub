@@ -20,7 +20,7 @@ class EditSideMenu extends React.Component {
             <Link
               href={{
                 pathname: "/mypage/edit/Thema",
-                query: { contentId: {this.props.id} },
+                query: { contentId: ${this.props.id} },
               }}
             >
               <a className={Styles.link}>
@@ -34,7 +34,8 @@ class EditSideMenu extends React.Component {
             <Link
               href={{
                 pathname: "/mypage/edit/plot",
-                query: { contentId: {this.props.id} },              }}
+                query: { contentId: ${this.props.id} },              
+              }}
             >
               <a className={Styles.link}>
                 <span className={Styles.text}>
@@ -47,7 +48,8 @@ class EditSideMenu extends React.Component {
             <Link
               href={{
                 pathname: "/mypage/edit/character",
-                query: { contentId: {this.props.id} },              }}
+                query: { contentId: ${this.props.id} },              
+              }}
             >
               <a className={Styles.link}>
                 <span className={Styles.text}>
@@ -60,7 +62,8 @@ class EditSideMenu extends React.Component {
             <Link
               href={{
                 pathname: "/mypage/edit/worldSetting",
-                query: { contentId: {this.props.id} },              }}
+                query: { contentId: ${this.props.id} },             
+              }}
             >
               <a className={Styles.link}>
                 <span className={Styles.text}>
