@@ -2,14 +2,22 @@ import Header from "../../../../component/header/Header";
 import EditSideMenu from "../../../../component/editMenu/EditSideMenu";
 import Link from "next/link";
 import Styles from "../../../../styles/Edit.module.css";
+import { useRouter } from "next/router";
+
 
 const Character = (props) => {
+  const router = useRouter();
+  console.log(router.query);
+  const documentId = router.query.contentId;
+  console.log("ドキュメントID", documentId);
+
+
   return (
     <>
       <Header></Header>
       <div className={Styles.template}>
         <div className={Styles.sideMenu}>
-          <EditSideMenu></EditSideMenu>
+          <EditSideMenu id={documentId} />
         </div>
 
         <main className={Styles.main}>
