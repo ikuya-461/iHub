@@ -697,3 +697,7 @@
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
+
+.characterData{
+  margin-top: 12px;
+}
